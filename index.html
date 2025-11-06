@@ -123,7 +123,8 @@
         border: 1px solid #e5e7eb; /* gray-200 */
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: contain; /* MODIFIED: Changed from cover to contain */
+        max-height: 70vh; /* ADDED: Prevent images from being too tall */
     }
   </style>
 </head>
@@ -313,12 +314,15 @@
         <div class="slide-container">
           <h2 class="slide-title">The Process: <span class="highlight">Natural Language to Workflow</span></h2>
           <p class="slide-subtitle">Translating simple user intent directly into a complex, executable workflow.</p>
-          <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+          <!-- MODIFIED: Removed grid, added space-y-8 for vertical stacking -->
+          <div class="slide-content space-y-8">
+            <!-- MODIFIED: Added centering and max-width -->
+            <div class="w-full md:w-4/5 mx-auto">
               <h3 class="font-bold text-xl mb-3">Step 1: User Intent</h3>
               <img src="images/image (4).png" alt="User chat input: I wanna travel to bangkok, and I am living in seoul." class="rounded-lg border border-gray-200">
             </div>
-            <div>
+            <!-- MODIFIED: Added centering and max-width -->
+            <div class="w-full md:w-4/5 mx-auto">
               <h3 class="font-bold text-xl mb-3">Step 2: AI Generates Workflow</h3>
               <img src="images/image (1).png" alt="AI generated workflow diagram" class="rounded-lg border border-gray-200">
             </div>
@@ -331,12 +335,15 @@
         <div class="slide-container">
           <h2 class="slide-title">Live Execution & <span class="highlight">Interaction</span></h2>
           <p class="slide-subtitle">The AI executes the workflow, providing results and handling complex, multi-step tasks.</p>
-          <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+          <!-- MODIFIED: Removed grid, added space-y-8 for vertical stacking -->
+          <div class="slide-content space-y-8">
+            <!-- MODIFIED: Added centering and max-width -->
+            <div class="w-full md:w-4/5 mx-auto">
               <h3 class="font-bold text-xl mb-3">Step 3: Execution & Result</h3>
               <img src="images/image (2).png" alt="Workflow with chat results" class="rounded-lg border border-gray-200">
             </div>
-            <div>
+            <!-- MODIFIED: Added centering and max-width -->
+            <div class="w-full md:w-4/5 mx-auto">
               <h3 class="font-bold text-xl mb-3">The Full Platform View</h3>
               <img src="images/image (3).png" alt="Full workflow visualization UI" class="rounded-lg border border-gray-200">
             </div>
