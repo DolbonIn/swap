@@ -117,6 +117,14 @@
         white-space: pre-wrap;
         word-wrap: break-word;
     }
+    /* Style for images in slides */
+    .slide-content img {
+        border-radius: 0.5rem;
+        border: 1px solid #e5e7eb; /* gray-200 */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
   </style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen p-4 md:p-8 pb-32">
@@ -144,7 +152,8 @@
             <p><b>3. Core Principle:</b> Learning Efficiency from 'Familiarity'</p>
             <p><b>4. Performance Comparison:</b> DSL-GRPO vs. JSON-SFT+GRPO</p>
             <p><b>5. The Evolving Model:</b> Efficiency Optimization and Self-Correction</p>
-            <p><b>6. Conclusion:</b> Vision Towards 'Executable Reasoning'</p>
+            <p><b>6. Application & Vision:</b> From DSL to Code Reasoning Models</p>
+            <p><b>7. Conclusion:</b> The Future of Executable Reasoning</p>
           </div>
         </div>
       </div>
@@ -186,19 +195,12 @@
         </div>
       </div>
 
-      <!-- Slide 5: Section Title (Solution) with Image -->
+      <!-- Slide 5: Section Title (Solution) -->
       <div class="slide">
         <div class="slide-container">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p class="slide-part-title">Part 2: The New Approach</p>
-              <h2 class="slide-title">Python DSL: Making Models <span class="highlight">'Think Like Code'</span></h2>
-              <p class="slide-content text-xl">Python DSL expresses the workflow's execution process in a form that allows 'thinking like a program'. Within this structure, the model can intuitively understand logical relationships and data flow.</p>
-            </div>
-            <div>
-              <img src="images/image (3).jpg" alt="Workflow Visualization Demo" class="rounded-lg shadow-xl w-full">
-            </div>
-          </div>
+          <p class="slide-part-title">Part 2: The New Approach</p>
+          <h2 class="slide-title">Python DSL: Making Models <span class="highlight">'Think Like Code'</span></h2>
+          <p class="slide-content text-xl">Python DSL expresses the workflow's execution process in a form that allows 'thinking like a program'. Within this structure, the model can intuitively understand logical relationships and data flow.</p>
         </div>
       </div>
 
@@ -228,24 +230,16 @@
         </div>
       </div>
 
-      <!-- Slide 7: Content with a special block (The "Why") with Images -->
+      <!-- Slide 7: Content with a special block (The "Why") -->
       <div class="slide">
         <div class="slide-container">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
-              <p class="slide-part-title">Part 3: Core Principle</p>
-              <h2 class="slide-title">Core Principle: Learning Efficiency from <span class="highlight">'Familiarity'</span></h2>
-              <p class="slide-subtitle">DSL-based GRPO simultaneously removes the 'burden of memorizing new things' and the 'uncertainty of execution' for the model.</p>
-              <div class="slide-content">
-                <div class="mt-8 p-6 bg-gray-50 border border-gray-200 rounded-lg">
-                  <h3 class="font-bold text-xl">Understanding-based Learning</h3>
-                  <p class="mt-2">Models are already <span class="highlight">familiar with Python syntax</span> from pre-training. The DSL operates on top of this familiar environment. Instead of memorizing unfamiliar rules, the model can immediately interpret reward signals and <span class="highlight">correct</span> its behavior within a linguistic context it understands.</p>
-                </div>
-              </div>
-            </div>
-            <div class="mt-8 md:mt-16 space-y-4">
-              <img src="images/image (4).png" alt="AI is thinking" class="rounded-lg shadow-md w-full max-w-md mx-auto">
-              <img src="images/image (1).jpg" alt="Workflow loaded and ready" class="rounded-lg shadow-md w-full">
+          <p class="slide-part-title">Part 3: Core Principle</p>
+          <h2 class="slide-title">Core Principle: Learning Efficiency from <span class="highlight">'Familiarity'</span></h2>
+          <p class="slide-subtitle">DSL-based GRPO simultaneously removes the 'burden of memorizing new things' and the 'uncertainty of execution' for the model.</p>
+          <div class="slide-content">
+            <div class="mt-8 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+              <h3 class="font-bold text-xl">Understanding-based Learning</h3>
+              <p class="mt-2">Models are already <span class="highlight">familiar with Python syntax</span> from pre-training. The DSL operates on top of this familiar environment. Instead of memorizing unfamiliar rules, the model can immediately interpret reward signals and <span class="highlight">correct</span> its behavior within a linguistic context it understands.</p>
             </div>
           </div>
         </div>
@@ -283,7 +277,7 @@
         </div>
       </div>
 
-      <!-- Slide 9: Standard Content (Beyond Success) with Image -->
+      <!-- Slide 9: Standard Content (Beyond Success) -->
       <div class="slide">
         <div class="slide-container">
           <p class="slide-part-title">Part 5: The Evolving Model</p>
@@ -291,10 +285,7 @@
           <p class="slide-subtitle">The model learned to optimize for 'efficiency' on its own, even without explicit rewards.</p>
           <div class="slide-content">
             <p>As learning progressed, the model <span class="highlight">autonomously improved</span> the workflow by removing unnecessary steps and simplifying data flow. This shows that GRPO understands 'why it succeeded' in context.</p>
-            
-            <img src="images/image (2).jpg" alt="Final workflow result with AI response" class="rounded-lg shadow-md w-full my-8">
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
               <div class="p-8 bg-green-50 rounded-lg border border-green-200 text-center">
                 <div class="text-5xl font-black text-green-700">~50%</div>
                 <div class="mt-2 font-bold text-xl">Average Execution Speed Reduction</div>
@@ -308,10 +299,55 @@
         </div>
       </div>
 
-      <!-- Slide 10: Conclusion -->
+      <!-- *** NEW SLIDE 10 *** -->
+      <div class="slide">
+        <div class="slide-container">
+          <p class="slide-part-title">Part 6: Application & Future Vision</p>
+          <h2 class="slide-title">Beyond Theory: <span class="highlight">Real-World Application</span></h2>
+          <p class="slide-content text-xl">We are applying this DSL-GRPO framework to advanced models, including Anthropic's Claude Code series, to build agents that truly understand and execute.</p>
+        </div>
+      </div>
+
+      <!-- *** NEW SLIDE 11 *** -->
+      <div class="slide">
+        <div class="slide-container">
+          <h2 class="slide-title">The Process: <span class="highlight">Natural Language to Workflow</span></h2>
+          <p class="slide-subtitle">Translating simple user intent directly into a complex, executable workflow.</p>
+          <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="font-bold text-xl mb-3">Step 1: User Intent</h3>
+              <img src="images/image (4).png" alt="User chat input: I wanna travel to bangkok, and I am living in seoul." class="rounded-lg border border-gray-200">
+            </div>
+            <div>
+              <h3 class="font-bold text-xl mb-3">Step 2: AI Generates Workflow</h3>
+              <img src="images/image (1).png" alt="AI generated workflow diagram" class="rounded-lg border border-gray-200">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *** NEW SLIDE 12 *** -->
+      <div class="slide">
+        <div class="slide-container">
+          <h2 class="slide-title">Live Execution & <span class="highlight">Interaction</span></h2>
+          <p class="slide-subtitle">The AI executes the workflow, providing results and handling complex, multi-step tasks.</p>
+          <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="font-bold text-xl mb-3">Step 3: Execution & Result</h3>
+              <img src="images/image (2).png" alt="Workflow with chat results" class="rounded-lg border border-gray-200">
+            </div>
+            <div>
+              <h3 class="font-bold text-xl mb-3">The Full Platform View</h3>
+              <img src="images/image (3).png" alt="Full workflow visualization UI" class="rounded-lg border border-gray-200">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 13: Conclusion (Original Slide 10) -->
       <div class="slide">
         <div class="slide-container text-center">
-          <p class="slide-part-title">Part 6: Conclusion</p>
+          <p class="slide-part-title">Part 7: Conclusion</p>
           <div class="text-6xl mb-6">🎯</div>
           <h2 class="slide-title">Towards 'Executable Reasoning'</h2>
           <div class="slide-content max-w-4xl mx-auto">
@@ -320,8 +356,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Q&A Slide is intentionally removed as requested -->
 
     </div>
   </div>
